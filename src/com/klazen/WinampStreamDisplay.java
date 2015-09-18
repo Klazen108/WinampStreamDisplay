@@ -113,8 +113,11 @@ public class WinampStreamDisplay extends JFrame {
 			lbl.setText(title);
 		} catch (InvalidHandle e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
+			//e.printStackTrace();
+			lbl.setText("Winamp not running...");
+		} catch (Exception e) {
+			
+		}
 	}
 }
 
